@@ -16,7 +16,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 import indexRouter from './app/routes/index.route.server.js'
 
 
-
+//configuration module
+import {Secret} from './config/config.js';
 
 
 
@@ -34,9 +35,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname,'/client')));
+//app.use(express.static(path.join(__dirname,'/client')));
+app.use(express.static(path.join(__dirname,'/public')));
 app.use(session({
-secret: 'MySecret',
+secret: Secret ,
 saveUninitialized: false,
 resave:false
 
