@@ -1,3 +1,12 @@
+
+/** 
+ * index.route.server.js
+ * Amin Hossein Tehrani
+ * 301225212
+ * October 1 2022
+ * 
+ * 
+ */
 //import the router component
 
 import {Router} from "express"

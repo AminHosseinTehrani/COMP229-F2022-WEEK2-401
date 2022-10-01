@@ -1,3 +1,13 @@
+/** 
+ * index.controller.server.js
+ * Amin Hossein Tehrani
+ * 301225212
+ * October 1 2022
+ * 
+ * 
+ */
+
+
 export function displayHomePage(req, res, next) {
     res.render('index', {title: 'Home',page: 'home'});
 };
